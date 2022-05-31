@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>🤯 Calculator 🤩</h1>
 
-    <script src="./script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>🤯 Calculator 🤩</h1>
+  <div class="container ">
+    <section class="result"></section>
+    <div class="operations flex">
+      <div class="box add">+</div>
+      <div class="box sub">-</div>
+      <div class="box mul">*</div>
+      <div class="box div">%</div>
+    </div>
+    <div class="numbers flex ">
+      <ul class="flex wrap">
+        <li class="box ">7</li>
+        <li class="box ">8</li>
+        <li class="box ">9</li>
+        <li class="box ">4</li>
+        <li class="box ">5</li>
+        <li class="box ">6</li>
+        <li class="box ">3</li>
+        <li class="box ">2</li>
+        <li class="box ">1</li>
+        <li class="box ">.</li>
+        <li class="box ">0</li>
+        <button class="box clear">C</button>
+      </ul>
+      <button class="box equalto">=</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>
