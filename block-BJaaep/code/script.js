@@ -1,23 +1,23 @@
-function randomNumber (max){
- return (Math.round(Math.random() * max));
-}
-let allBox = document.querySelectorAll('.box');
-let newBox = document.querySelectorAll('.box2');
+let firstBoxes = document.querySelectorAll('.first li');
+let secondBox = document.querySelector('.second');
 
-function handleMouse(select,Selem){
-    select.innerText = randomNumber(12);
-    Selem.innerText = randomNumber(2);
-    return select;
-}
+firstBoxes.forEach((box, index) => {
+    box.addEventListener("click",(eve)=>{
+        eve.target.innerText = index + 1;
+        
+        setTimeout(() => {
+            eve.target.innerText = "";
+        },5000);
+    })
+})
 
-allBox.forEach(elem => {
-  elem.addEventListener('click',function(){
-      handleMouse(elem);
-  });
-});
+secondBox.addEventListener("click",(eve) => {
+    console.log(eve.target);
+    let text = eve.target.dataset.text;
+    eve.target.innerText = text;
+        
+    setTimeout(() => {
+        eve.target.innerText = "";
+    },5000);
 
-newBox.forEach(Selem => {
-    Selem.addEventListener('click',function(){
-        handleMouse(Selem);
-    });
-  });
+})
