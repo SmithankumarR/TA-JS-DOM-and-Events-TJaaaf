@@ -79,6 +79,8 @@ function handleSubmit(event) {
     emailElm.nextElementSibling.innerText = emailError;
     phoneElm.nextElementSibling.innerText = phoneError;
     confirmElm.nextElementSibling.innerText = confirmError;
+
+    alert("User Added Successfully!");
 }
 
 form.addEventListener('submit', handleSubmit);
