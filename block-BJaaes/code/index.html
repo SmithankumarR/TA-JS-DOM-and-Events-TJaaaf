@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation 👇</title>
+  </head>
+  <body>
+    <main>
+      <section class="form-sec">
+        <form action="">
+          <h1>Form</h1>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a0094d0aa6.js" crossorigin="anonymous"></script>
-  <title>Form Validation </title>
-</head>
+          <fieldset>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+            <small></small>
+          </fieldset>
+          <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" />
+            <small></small>
+          </fieldset>
 
-<body>
-  <div>
-    <form class="container" >
-      <div class="form-control">
-        <label for="name">User Name:</label>
-        <input id="name" type="text" name="username"  placeholder="Enter your Username" />
-        <small></small>
-      </div>
-      <div class="form-control">
-        <label for="name">Your Name:</label>
-        <input id="name" type="text" name="name"  placeholder="Enter your name" />
-        <small></small>
-
-      </div>
-      <div class="form-control">
-        <label for="email">Your Phone Number:</label>
-        <input id="email" type="tel" name="phone"  placeholder="Enter your number" />
-        <small></small>
-
-      </div> 
-      <div class="form-control">
-        <label for="email">Your Email:</label>
-        <input id="email" type="text" name="email"  placeholder="Enter your email" />
-        <small></small>
-
-      </div>
-      <div class="form-control">
-        <label for="email">Your Password:</label>
-        <input id="email" type="text" name="Password"  placeholder="Enter your password" />
-        <small></small>
-
-      </div>
-      <div class="form-control">
-        <label for="email">Confirm passed:</label>
-        <input id="number" type="text" name="confirmPsd"  placeholder="Enter your age" />
-        <small></small>
-      </div>
-      <button class="submit"> Submit</button>
-    </form>
-  </div>
-  <script src="./script.js"></script>
-</body>
-
+          <fieldset>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+            <small></small>
+          </fieldset>
+          <fieldset>
+            <label for="number">Contact No.:</label>
+            <input
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="Enter Contact Number"
+            />
+            <small></small>
+          </fieldset>
+          <fieldset>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+            <small></small>
+          </fieldset>
+          <fieldset>
+            <label for="cPassword">Confirm Password:</label>
+            <input
+              type="Password"
+              name="cPassword"
+              id="cPassword"
+              placeholder="Confirm Password"
+            />
+            <small></small>
+          </fieldset>
+          <fieldset class="btn-div">
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
