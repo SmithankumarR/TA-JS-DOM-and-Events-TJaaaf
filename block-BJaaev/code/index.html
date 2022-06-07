@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Todo Application</h1>
-    </header>
-    <section class="container flex">
-     <input type="text" id="text" name = "input" placeholder="What needss to be done">
+    <h1 class="heading">Todos</h1>
+    <div class="container">
+      <input type="text" name="input-todo" placeholder="What needs to be done?" class="input-todo">
       <ul>
+        <!-- <li>
+          <input type="checkbox" name="checkbox">
+        <label></label>
+        <span></span>
+        </li> -->
+        
       </ul>
-    </section>
-    <footer>
- 
-    </footer>
+      <footer class="flex jcb aic bottom-container">
+        <a href="#" class="count"></a>
+        <a href="#" class="all">All</a>
+        <a href="#" class="active">Active</a>
+        <a href="#" class="completed">Completed</a>
+        <a href="#" class="clear">Clear completed</a>
+        
+      </footer>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
