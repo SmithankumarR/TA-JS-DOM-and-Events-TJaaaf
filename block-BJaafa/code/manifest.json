@@ -1,0 +1,22 @@
+{
+    "name": "Invertor",
+    "description": "Converts Dark Mode into Light Mode and Viceversa",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "background":{
+        "scripts" : [
+            "popup.js"
+        ],
+        "Persistent": true
+    },
+    "browser_action": {
+        "default_title": "Inverter",
+        "default_popup": "popup.html"
+    },
+    "permissions":[
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+
+}
