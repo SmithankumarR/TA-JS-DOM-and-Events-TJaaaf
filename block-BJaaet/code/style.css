@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(
+      to top right,
+      rgba(64, 224, 208, 0.93),
+      rgba(64, 224, 208, 0.688)
+    );
+    min-height: 100vh;
+  }
+  .container {
+    width: 50%;
+    background: linear-gradient(
+      to top right,
+      rgba(250, 94, 211, 0.815),
+      rgba(240, 122, 234, 0.745)
+    );
+    min-height: 60vh;
+    margin: 2rem 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  fieldset {
+    border: none;
+  }
+  input {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+  }
+  .movie input {
+    width: 10%;
+  }
+  .list > * {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    vertical-align: bottom;
+    border-bottom: 1px solid gray;
+  }
+  i {
+    font-size: 2rem;
+  }
